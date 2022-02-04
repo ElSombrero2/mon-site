@@ -1,0 +1,138 @@
+div#app{
+  background-color: black;
+  div#bg{
+    width: 100%;
+    height: 700px;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-image: url(../../static/pexels-pixabay-220201.jpg);
+  }
+  div#filter{
+    top: 0;
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    background: #00000088;
+    z-index: 10;
+    div.description{
+      padding-top: 100px;
+      div.legend{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        p{ position: relative; }
+      }
+      div.main-title{
+        margin-bottom: 20px;
+        small{
+          position: relative;
+          top: -15px;
+        }
+      }
+      button.start{
+        border-radius: 10px;
+        background: -webkit-linear-gradient(360deg, #7de67b, #34e2c0);
+      }
+    }
+  }
+  div.card-custom{
+    div.back{
+      z-index: 0;
+      transform: rotateZ(5deg);
+      width: 250px;
+      height: 300px;
+      border-radius: 5px;
+      background-color: #acf5ff;
+      div.card-content{
+        width: 250px;
+        height: 300px;
+        border: solid 2px #acf5ff;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../static/pexels-andrew-neel-3178744.jpg);
+        transform: rotate(-5deg);
+      } 
+    }
+  }
+
+  div.card-custom.vertical{
+    div.back{
+      z-index: 0;
+      transform: rotateZ(5deg);
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      background-color: #ffff97;
+      div.card-content{
+        width: 300px;
+        height: 200px;
+        border: solid 2px #ffff97;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../static/pexels-andrew-neel-3178744.jpg);
+        transform: rotate(-5deg);
+      } 
+    }
+  }
+
+  div.main-container{
+    z-index: 100000000;
+    margin-top: 850px;
+    background-color: #000;
+    min-height: 800px;
+    div.container{
+      margin-top: -300px;
+      padding-top: 50px;
+    }
+    div.head{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 250px;
+      background: linear-gradient(to bottom, #00000000, #000, #000);
+      position: relative;
+      top: -250px;
+      a{
+        position: relative;
+        top: 50px;
+        height: 80px;
+        width: 50px;
+        border-radius: 50px;
+        border: solid white 1px;
+        color: white;
+        transition: all 500ms !important;
+      }
+      a:hover{
+        background: -webkit-linear-gradient(#7de67b, #34e2c0);
+        border: none;
+      }
+    }
+  }
+}
+
+h1.big-title{
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+h1.big-title.gradient{
+  font-size: 72px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: -webkit-linear-gradient(360deg, #7de67b, #34e2c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body{
+  padding-bottom: -300px;
+}
+
+*{ scroll-behavior: smooth;}
